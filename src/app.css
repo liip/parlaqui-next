@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	color-scheme: light;
+	--paper: #fafafa;
+	--surface: #fff;
+	--ink: #1e1e1e;
+	--muted: #5f6b6b;
+	--rule: #e9ecea;
+	--ring: #033840;
+	--brand: #5fd1ad;
+	--brand-soft: #d7f4ea;
+	--brand-hover: #45c29b;
+	--ease: cubic-bezier(0.2, 0.77, 0.28, 1);
+}
+
+html {
+	background: var(--paper);
+	color: var(--ink);
+}
+
+body {
+	background: var(--paper);
+	color: var(--ink);
+	-webkit-font-smoothing: antialiased;
+}

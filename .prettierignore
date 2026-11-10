@@ -1,0 +1,16 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+.env
+.env.*
+!.env.example
+
+# The lockfile is generated
+package-lock.json
+
+# Helm templates are not plain YAML, and the deploy job rewrites the chart
+/kubernetes
+
+# Google expects this file byte for byte
+static/google*.html

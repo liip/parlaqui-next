@@ -1,0 +1,32 @@
+{
+	"content": [
+		{
+			"key": "1311000",
+			"categoryKey": "131",
+			"abbreviation": "CN",
+			"name": "Consiglio nazionale",
+			"legacyKey": 1
+		},
+		{
+			"key": "1311001",
+			"categoryKey": "131",
+			"abbreviation": "CS",
+			"name": "Consiglio degli Stati",
+			"legacyKey": 2
+		},
+		{
+			"key": "1311002",
+			"categoryKey": "131",
+			"abbreviation": "AF",
+			"name": "Assemblea federale",
+			"legacyKey": 3
+		}
+	],
+	"page": {
+		"size": 50,
+		"number": 0,
+		"hasNext": false,
+		"totalElements": null,
+		"totalPages": null
+	}
+}

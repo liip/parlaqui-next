@@ -1,0 +1,183 @@
+{
+	"content": [
+		{
+			"active": true,
+			"gender": {
+				"key": "1621001",
+				"categoryKey": "162",
+				"abbreviation": "m",
+				"name": "Masculin"
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311001",
+					"categoryKey": "131",
+					"abbreviation": "CE",
+					"name": "Conseil des États"
+				},
+				"canton": {
+					"key": "1661023",
+					"categoryKey": "166",
+					"abbreviation": "VD",
+					"name": "Vaud"
+				},
+				"leavingReason": null,
+				"electedDate": "2023-10-22",
+				"swornInDate": "2023-12-04",
+				"leavingDate": "9999-12-31",
+				"replacedAssemblyMember": null
+			},
+			"legacyId": 2513,
+			"id": 491,
+			"firstName": "Pierre-Yves",
+			"lastName": "Maillard",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": "Dép",
+				"name": "Député/députée"
+			},
+			"canton": {
+				"key": "1661023",
+				"categoryKey": "166",
+				"abbreviation": "VD",
+				"name": "Vaud"
+			},
+			"party": {
+				"code": "P-SP",
+				"name": "Parti socialiste suisse",
+				"shortName": "PSS",
+				"id": 30012
+			},
+			"council": {
+				"key": "1311001",
+				"categoryKey": "131",
+				"abbreviation": "CE",
+				"name": "Conseil des États"
+			}
+		},
+		{
+			"active": true,
+			"gender": {
+				"key": "1621001",
+				"categoryKey": "162",
+				"abbreviation": "m",
+				"name": "Masculin"
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311001",
+					"categoryKey": "131",
+					"abbreviation": "CE",
+					"name": "Conseil des États"
+				},
+				"canton": {
+					"key": "1661026",
+					"categoryKey": "166",
+					"abbreviation": "ZH",
+					"name": "Zurich"
+				},
+				"leavingReason": null,
+				"electedDate": "2023-10-22",
+				"swornInDate": "2023-12-04",
+				"leavingDate": "9999-12-31",
+				"replacedAssemblyMember": null
+			},
+			"legacyId": 2694,
+			"id": 3891,
+			"firstName": "Daniel",
+			"lastName": "Jositsch",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": "Dép",
+				"name": "Député/députée"
+			},
+			"canton": {
+				"key": "1661026",
+				"categoryKey": "166",
+				"abbreviation": "ZH",
+				"name": "Zurich"
+			},
+			"party": {
+				"code": "-",
+				"name": "sans parti",
+				"shortName": "-",
+				"id": 30026
+			},
+			"council": {
+				"key": "1311001",
+				"categoryKey": "131",
+				"abbreviation": "CE",
+				"name": "Conseil des États"
+			}
+		},
+		{
+			"active": true,
+			"gender": {
+				"key": "1621002",
+				"categoryKey": "162",
+				"abbreviation": "f",
+				"name": "Féminin"
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311000",
+					"categoryKey": "131",
+					"abbreviation": "CN",
+					"name": "Conseil national"
+				},
+				"canton": {
+					"key": "1661010",
+					"categoryKey": "166",
+					"abbreviation": "GR",
+					"name": "Grisons"
+				},
+				"leavingReason": {
+					"key": "1561008",
+					"categoryKey": "156",
+					"name": "Démission"
+				},
+				"electedDate": "2023-10-22",
+				"swornInDate": "2023-12-04",
+				"leavingDate": "2026-11-29",
+				"replacedAssemblyMember": null
+			},
+			"legacyId": 3157,
+			"id": 4265,
+			"firstName": "Anna",
+			"lastName": "Giacometti",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": "Dép",
+				"name": "Député/députée"
+			},
+			"canton": {
+				"key": "1661010",
+				"categoryKey": "166",
+				"abbreviation": "GR",
+				"name": "Grisons"
+			},
+			"party": {
+				"code": "FDP-LIBERALE",
+				"name": "PLR.Les Libéraux-Radicaux",
+				"shortName": "PLR",
+				"id": 30015
+			},
+			"council": {
+				"key": "1311000",
+				"categoryKey": "131",
+				"abbreviation": "CN",
+				"name": "Conseil national"
+			}
+		}
+	],
+	"page": {
+		"size": 3,
+		"number": 0,
+		"hasNext": true,
+		"totalElements": 6,
+		"totalPages": 2
+	}
+}

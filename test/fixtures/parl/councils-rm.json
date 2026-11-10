@@ -1,0 +1,32 @@
+{
+	"content": [
+		{
+			"key": "1311000",
+			"categoryKey": "131",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 1
+		},
+		{
+			"key": "1311001",
+			"categoryKey": "131",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 2
+		},
+		{
+			"key": "1311002",
+			"categoryKey": "131",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 3
+		}
+	],
+	"page": {
+		"size": 50,
+		"number": 0,
+		"hasNext": false,
+		"totalElements": null,
+		"totalPages": null
+	}
+}

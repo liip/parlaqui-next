@@ -1,0 +1,65 @@
+---
+# The canonical name: ORIGIN is https://<host>, and the app redirects every other name to it.
+host: parlaqui.ch
+# Further names routed to the pod, which the app redirects to `host` (www., parlaqui.swiss).
+aliases:
+  - www.parlaqui.ch
+  - parlaqui.swiss
+  - www.parlaqui.swiss
+image:
+  repository: docker.gitlab.liip.ch/liip/parlaqui-next/app
+  # Written by the deploy:production CI job, do not edit by hand.
+  tag: v1-0-6
+imagePullSecret: ''
+
+tls:
+  # Empty: the cluster's wildcard certificate, which covers *.ik8s.liip.ch only. A host outside it
+  # needs `letsencrypt-prod` (HTTP-01: issued once the name's DNS points to the cluster).
+  clusterIssuer: letsencrypt-prod
+
+# Non-secret runtime configuration (ORIGIN derives from host).
+env:
+  # The ingress controller writes the visitor's address into X-Forwarded-For.
+  ADDRESS_HEADER: x-forwarded-for
+  XFF_DEPTH: '1'
+
+storage:
+  size: 2Gi
+  storageClassName: ''
+podSecurityContext:
+  fsGroup: 1000
+  fsGroupChangePolicy: OnRootMismatch
+# The namespace enforces the "restricted" Pod Security Standard.
+containerSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 1000
+  runAsGroup: 1000
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - ALL
+  seccompProfile:
+    type: RuntimeDefault
+# Measured with 500 players starting within two seconds, caches cold: memory peaks near 510 MiB (the
+# render caches are bounded), and the burst of first photos waits up to 11 s on one CPU, 2.6 s on two.
+# 1 GiB leaves room for sharp's slow growth over days, which a short test cannot show. The namespace
+# LimitRange requires the memory limit to equal the request.
+resources:
+  requests:
+    cpu: 250m
+    memory: 1Gi
+  limits:
+    cpu: '2'
+    memory: 1Gi
+
+externalSecrets:
+  enabled: true
+  gitlabUrl: https://gitlab.liip.ch/
+  gitlabProjectID: '4645'
+  gitlabAccessTokenSecret: argocd-gitlab-user-access-token-secret
+  # Env var name → GitLab CI/CD variable holding its value.
+  gitlabVariables:
+    PARL_API_KEY: PROD_PARL_API_KEY
+    ROKKA_API_KEY: PROD_ROKKA_API_KEY
+    IMPORT_TOKEN: PROD_IMPORT_TOKEN
+    INSIGHTS_TOKEN: PROD_INSIGHTS_TOKEN

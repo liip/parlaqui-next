@@ -1,0 +1,18 @@
+# Parlaqui
+
+> Parlaqui is a free photo quiz about the Swiss Federal Assembly: it shows the portrait of a member of the National Council (Nationalrat, Conseil national, Consiglio nazionale) or the Council of States (Ständerat, Conseil des États, Consiglio degli Stati), and the player has ten seconds to pick the right name among six. Ten rounds per game, faster answers score more points. No account, no sign-up.
+
+- Made by Liip (https://www.liip.ch). Not an official website of the Swiss Parliament.
+- The list of members comes from the Parliament's open data (https://ws.parl.ch) and is refreshed every day. Portraits come from parlament.ch (© ParlCH).
+- Available in German, French, Italian and Romansh.
+
+## Pages
+
+- [Parlaqui in German](https://parlaqui.ch/de)
+- [Parlaqui in French](https://parlaqui.ch/fr)
+- [Parlaqui in Italian](https://parlaqui.ch/it)
+- [Parlaqui in Romansh](https://parlaqui.ch/rm)
+- [Members of the Swiss Parliament by canton, in German](https://parlaqui.ch/de/members)
+- [Members of the Swiss Parliament by canton, in French](https://parlaqui.ch/fr/members)
+- [Members of the Swiss Parliament by canton, in Italian](https://parlaqui.ch/it/members)
+- [Members of the Swiss Parliament by canton, in Romansh](https://parlaqui.ch/rm/members)

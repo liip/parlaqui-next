@@ -1,0 +1,183 @@
+{
+	"content": [
+		{
+			"active": true,
+			"gender": {
+				"key": "1621001",
+				"categoryKey": "162",
+				"abbreviation": null,
+				"name": null
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311001",
+					"categoryKey": "131",
+					"abbreviation": null,
+					"name": null
+				},
+				"canton": {
+					"key": "1661023",
+					"categoryKey": "166",
+					"abbreviation": null,
+					"name": null
+				},
+				"leavingReason": null,
+				"electedDate": "2023-10-22",
+				"swornInDate": "2023-12-04",
+				"leavingDate": "9999-12-31",
+				"replacedAssemblyMember": null
+			},
+			"legacyId": 2513,
+			"id": 491,
+			"firstName": "Pierre-Yves",
+			"lastName": "Maillard",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": null,
+				"name": null
+			},
+			"canton": {
+				"key": "1661023",
+				"categoryKey": "166",
+				"abbreviation": null,
+				"name": null
+			},
+			"party": {
+				"code": "P-SP",
+				"name": null,
+				"shortName": null,
+				"id": 30012
+			},
+			"council": {
+				"key": "1311001",
+				"categoryKey": "131",
+				"abbreviation": null,
+				"name": null
+			}
+		},
+		{
+			"active": true,
+			"gender": {
+				"key": "1621001",
+				"categoryKey": "162",
+				"abbreviation": null,
+				"name": null
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311001",
+					"categoryKey": "131",
+					"abbreviation": null,
+					"name": null
+				},
+				"canton": {
+					"key": "1661026",
+					"categoryKey": "166",
+					"abbreviation": null,
+					"name": null
+				},
+				"leavingReason": null,
+				"electedDate": "2023-10-22",
+				"swornInDate": "2023-12-04",
+				"leavingDate": "9999-12-31",
+				"replacedAssemblyMember": null
+			},
+			"legacyId": 2694,
+			"id": 3891,
+			"firstName": "Daniel",
+			"lastName": "Jositsch",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": null,
+				"name": null
+			},
+			"canton": {
+				"key": "1661026",
+				"categoryKey": "166",
+				"abbreviation": null,
+				"name": null
+			},
+			"party": {
+				"code": "-",
+				"name": null,
+				"shortName": null,
+				"id": 30026
+			},
+			"council": {
+				"key": "1311001",
+				"categoryKey": "131",
+				"abbreviation": null,
+				"name": null
+			}
+		},
+		{
+			"active": true,
+			"gender": {
+				"key": "1621002",
+				"categoryKey": "162",
+				"abbreviation": null,
+				"name": null
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311000",
+					"categoryKey": "131",
+					"abbreviation": null,
+					"name": null
+				},
+				"canton": {
+					"key": "1661010",
+					"categoryKey": "166",
+					"abbreviation": null,
+					"name": null
+				},
+				"leavingReason": {
+					"key": "1561008",
+					"categoryKey": "156",
+					"name": null
+				},
+				"electedDate": "2023-10-22",
+				"swornInDate": "2023-12-04",
+				"leavingDate": "2026-11-29",
+				"replacedAssemblyMember": null
+			},
+			"legacyId": 3157,
+			"id": 4265,
+			"firstName": "Anna",
+			"lastName": "Giacometti",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": null,
+				"name": null
+			},
+			"canton": {
+				"key": "1661010",
+				"categoryKey": "166",
+				"abbreviation": null,
+				"name": null
+			},
+			"party": {
+				"code": "FDP-LIBERALE",
+				"name": null,
+				"shortName": null,
+				"id": 30015
+			},
+			"council": {
+				"key": "1311000",
+				"categoryKey": "131",
+				"abbreviation": null,
+				"name": null
+			}
+		}
+	],
+	"page": {
+		"size": 3,
+		"number": 0,
+		"hasNext": true,
+		"totalElements": 6,
+		"totalPages": 2
+	}
+}

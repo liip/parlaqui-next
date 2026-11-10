@@ -1,0 +1,71 @@
+{
+	"content": [
+		{
+			"active": true,
+			"gender": {
+				"key": "1621002",
+				"categoryKey": "162",
+				"abbreviation": "W",
+				"name": "weiblich"
+			},
+			"activeElection": null,
+			"activeFederalCouncilMandates": [
+				{
+					"start": "2023-01-01",
+					"end": null,
+					"department": {
+						"key": "1151007",
+						"categoryKey": "115",
+						"abbreviation": "EJPD",
+						"name": "Eidgenössisches Justiz- und Polizeidepartement (EJPD)"
+					},
+					"function": {
+						"key": "1601003",
+						"categoryKey": "160",
+						"name": "Stellvertreter/in"
+					}
+				},
+				{
+					"start": "2026-01-01",
+					"end": null,
+					"department": {
+						"key": "1151006",
+						"categoryKey": "115",
+						"abbreviation": "EFD",
+						"name": "Eidgenössisches Finanzdepartement (EFD)"
+					},
+					"function": {
+						"key": "1601001",
+						"categoryKey": "160",
+						"name": "Bundesrat/Bundesrätin"
+					}
+				}
+			],
+			"legacyId": 2769,
+			"id": 4062,
+			"firstName": "Karin",
+			"lastName": "Keller-Sutter",
+			"type": {
+				"key": "1731002",
+				"categoryKey": "173",
+				"abbreviation": "BR",
+				"name": "Bundesrat/Bundesrätin"
+			},
+			"canton": null,
+			"party": {
+				"code": "FDP-LIBERALE",
+				"name": "FDP.Die Liberalen",
+				"shortName": "FDP-Liberale",
+				"id": 30015
+			},
+			"council": null
+		}
+	],
+	"page": {
+		"size": 50,
+		"number": 0,
+		"hasNext": false,
+		"totalElements": null,
+		"totalPages": null
+	}
+}

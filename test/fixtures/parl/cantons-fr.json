@@ -1,0 +1,200 @@
+{
+	"content": [
+		{
+			"key": "1661000",
+			"categoryKey": "166",
+			"abbreviation": " --",
+			"name": " --",
+			"legacyKey": 0
+		},
+		{
+			"key": "1661001",
+			"categoryKey": "166",
+			"abbreviation": "AG",
+			"name": "Argovie",
+			"legacyKey": 19
+		},
+		{
+			"key": "1661002",
+			"categoryKey": "166",
+			"abbreviation": "AR",
+			"name": "Appenzell Rh.-Ext.",
+			"legacyKey": 15
+		},
+		{
+			"key": "1661003",
+			"categoryKey": "166",
+			"abbreviation": "AI",
+			"name": "Appenzell Rh.-Int.",
+			"legacyKey": 16
+		},
+		{
+			"key": "1661004",
+			"categoryKey": "166",
+			"abbreviation": "BL",
+			"name": "Bâle-Campagne",
+			"legacyKey": 13
+		},
+		{
+			"key": "1661005",
+			"categoryKey": "166",
+			"abbreviation": "BS",
+			"name": "Bâle-Ville",
+			"legacyKey": 12
+		},
+		{
+			"key": "1661006",
+			"categoryKey": "166",
+			"abbreviation": "BE",
+			"name": "Berne",
+			"legacyKey": 2
+		},
+		{
+			"key": "1661007",
+			"categoryKey": "166",
+			"abbreviation": "FR",
+			"name": "Fribourg",
+			"legacyKey": 10
+		},
+		{
+			"key": "1661008",
+			"categoryKey": "166",
+			"abbreviation": "GE",
+			"name": "Genève",
+			"legacyKey": 25
+		},
+		{
+			"key": "1661009",
+			"categoryKey": "166",
+			"abbreviation": "GL",
+			"name": "Glaris",
+			"legacyKey": 8
+		},
+		{
+			"key": "1661010",
+			"categoryKey": "166",
+			"abbreviation": "GR",
+			"name": "Grisons",
+			"legacyKey": 18
+		},
+		{
+			"key": "1661011",
+			"categoryKey": "166",
+			"abbreviation": "JU",
+			"name": "Jura",
+			"legacyKey": 26
+		},
+		{
+			"key": "1661012",
+			"categoryKey": "166",
+			"abbreviation": "LU",
+			"name": "Lucerne",
+			"legacyKey": 3
+		},
+		{
+			"key": "1661013",
+			"categoryKey": "166",
+			"abbreviation": "NE",
+			"name": "Neuchâtel",
+			"legacyKey": 24
+		},
+		{
+			"key": "1661014",
+			"categoryKey": "166",
+			"abbreviation": "NW",
+			"name": "Nidwald",
+			"legacyKey": 7
+		},
+		{
+			"key": "1661015",
+			"categoryKey": "166",
+			"abbreviation": "OW",
+			"name": "Obwald",
+			"legacyKey": 6
+		},
+		{
+			"key": "1661016",
+			"categoryKey": "166",
+			"abbreviation": "SH",
+			"name": "Schaffhouse",
+			"legacyKey": 14
+		},
+		{
+			"key": "1661017",
+			"categoryKey": "166",
+			"abbreviation": "SZ",
+			"name": "Schwyz",
+			"legacyKey": 5
+		},
+		{
+			"key": "1661018",
+			"categoryKey": "166",
+			"abbreviation": "SO",
+			"name": "Soleure",
+			"legacyKey": 11
+		},
+		{
+			"key": "1661019",
+			"categoryKey": "166",
+			"abbreviation": "SG",
+			"name": "Saint-Gall",
+			"legacyKey": 17
+		},
+		{
+			"key": "1661020",
+			"categoryKey": "166",
+			"abbreviation": "TI",
+			"name": "Tessin",
+			"legacyKey": 27
+		},
+		{
+			"key": "1661021",
+			"categoryKey": "166",
+			"abbreviation": "TG",
+			"name": "Thurgovie",
+			"legacyKey": 20
+		},
+		{
+			"key": "1661022",
+			"categoryKey": "166",
+			"abbreviation": "UR",
+			"name": "Uri",
+			"legacyKey": 4
+		},
+		{
+			"key": "1661023",
+			"categoryKey": "166",
+			"abbreviation": "VD",
+			"name": "Vaud",
+			"legacyKey": 22
+		},
+		{
+			"key": "1661024",
+			"categoryKey": "166",
+			"abbreviation": "VS",
+			"name": "Valais",
+			"legacyKey": 23
+		},
+		{
+			"key": "1661025",
+			"categoryKey": "166",
+			"abbreviation": "ZG",
+			"name": "Zoug",
+			"legacyKey": 9
+		},
+		{
+			"key": "1661026",
+			"categoryKey": "166",
+			"abbreviation": "ZH",
+			"name": "Zurich",
+			"legacyKey": 1
+		}
+	],
+	"page": {
+		"size": 100,
+		"number": 0,
+		"hasNext": false,
+		"totalElements": null,
+		"totalPages": null
+	}
+}

@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: parlaqui-prod
+  namespace: liip-parlaqui
+spec:
+  destination:
+    name: ''
+    namespace: liip-parlaqui
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: kubernetes/infra/prod
+    repoURL: 'git@gitlab.liip.ch:liip/parlaqui-next.git'
+    targetRevision: main
+    helm:
+      releaseName: parlaqui
+  sources: []
+  project: liip-parlaqui
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+      - RespectIgnoreDifferences=true
+      - PruneLast=true

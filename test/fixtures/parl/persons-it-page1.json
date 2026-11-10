@@ -1,0 +1,235 @@
+{
+	"content": [
+		{
+			"active": true,
+			"gender": {
+				"key": "1621002",
+				"categoryKey": "162",
+				"abbreviation": "f.",
+				"name": "femminile"
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311000",
+					"categoryKey": "131",
+					"abbreviation": "CN",
+					"name": "Consiglio nazionale"
+				},
+				"canton": {
+					"key": "1661023",
+					"categoryKey": "166",
+					"abbreviation": "VD",
+					"name": "Vaud"
+				},
+				"leavingReason": null,
+				"electedDate": "2023-10-22",
+				"swornInDate": "2023-12-04",
+				"leavingDate": "9999-12-31",
+				"replacedAssemblyMember": null
+			},
+			"legacyId": 10817,
+			"id": 10817,
+			"firstName": "Isabelle",
+			"lastName": "Chappuis ",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": "Parl",
+				"name": "Parlamentare"
+			},
+			"canton": {
+				"key": "1661023",
+				"categoryKey": "166",
+				"abbreviation": "VD",
+				"name": "Vaud"
+			},
+			"party": {
+				"code": "P-M-E",
+				"name": "Alleanza del Centro",
+				"shortName": "M-E",
+				"id": 31586
+			},
+			"council": {
+				"key": "1311000",
+				"categoryKey": "131",
+				"abbreviation": "CN",
+				"name": "Consiglio nazionale"
+			}
+		},
+		{
+			"active": true,
+			"gender": {
+				"key": "1621001",
+				"categoryKey": "162",
+				"abbreviation": "m.",
+				"name": "maschile"
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311001",
+					"categoryKey": "131",
+					"abbreviation": "CS",
+					"name": "Consiglio degli Stati"
+				},
+				"canton": {
+					"key": "1661016",
+					"categoryKey": "166",
+					"abbreviation": "SH",
+					"name": "Sciaffusa"
+				},
+				"leavingReason": null,
+				"electedDate": "2025-06-29",
+				"swornInDate": "2025-09-08",
+				"leavingDate": "9999-12-31",
+				"replacedAssemblyMember": {
+					"id": 11504,
+					"lastName": "Stocker",
+					"firstName": "Simon",
+					"parliamentaryGroup": {
+						"code": "S",
+						"name": "Gruppo socialista",
+						"shortName": "Gruppo S",
+						"id": 20002
+					},
+					"party": {
+						"code": "P-SP",
+						"name": "Partito socialista svizzero",
+						"shortName": "PSS",
+						"id": 30012
+					},
+					"canton": {
+						"key": "1661016",
+						"categoryKey": "166",
+						"abbreviation": "SH",
+						"name": "Sciaffusa"
+					},
+					"council": {
+						"key": "1311001",
+						"categoryKey": "131",
+						"abbreviation": "CS",
+						"name": "Consiglio degli Stati"
+					}
+				}
+			},
+			"legacyId": 15601,
+			"id": 15601,
+			"firstName": "Severin",
+			"lastName": "Brüngger",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": "Parl",
+				"name": "Parlamentare"
+			},
+			"canton": {
+				"key": "1661016",
+				"categoryKey": "166",
+				"abbreviation": "SH",
+				"name": "Sciaffusa"
+			},
+			"party": {
+				"code": "FDP-LIBERALE",
+				"name": "PLR.I Liberali Radicali",
+				"shortName": "PLR",
+				"id": 30015
+			},
+			"council": {
+				"key": "1311001",
+				"categoryKey": "131",
+				"abbreviation": "CS",
+				"name": "Consiglio degli Stati"
+			}
+		},
+		{
+			"active": true,
+			"gender": {
+				"key": "1621002",
+				"categoryKey": "162",
+				"abbreviation": "f.",
+				"name": "femminile"
+			},
+			"activeElection": {
+				"council": {
+					"key": "1311000",
+					"categoryKey": "131",
+					"abbreviation": "CN",
+					"name": "Consiglio nazionale"
+				},
+				"canton": {
+					"key": "1661020",
+					"categoryKey": "166",
+					"abbreviation": "TI",
+					"name": "Ticino"
+				},
+				"leavingReason": null,
+				"electedDate": "2023-10-22",
+				"swornInDate": "2026-09-28",
+				"leavingDate": "9999-12-31",
+				"replacedAssemblyMember": {
+					"id": 4311,
+					"lastName": "Marchesi",
+					"firstName": "Piero",
+					"parliamentaryGroup": {
+						"code": "V",
+						"name": "Gruppo dell'Unione democratica di Centro",
+						"shortName": "Gruppo V",
+						"id": 20004
+					},
+					"party": {
+						"code": "SVP",
+						"name": "Unione democratica di Centro",
+						"shortName": "UDC",
+						"id": 30013
+					},
+					"canton": {
+						"key": "1661020",
+						"categoryKey": "166",
+						"abbreviation": "TI",
+						"name": "Ticino"
+					},
+					"council": {
+						"key": "1311000",
+						"categoryKey": "131",
+						"abbreviation": "CN",
+						"name": "Consiglio nazionale"
+					}
+				}
+			},
+			"legacyId": 18110,
+			"id": 18110,
+			"firstName": "Roberta",
+			"lastName": "Soldati",
+			"type": {
+				"key": "1731013",
+				"categoryKey": "173",
+				"abbreviation": "Parl",
+				"name": "Parlamentare"
+			},
+			"canton": {
+				"key": "1661020",
+				"categoryKey": "166",
+				"abbreviation": "TI",
+				"name": "Ticino"
+			},
+			"party": {
+				"code": "SVP",
+				"name": "Unione democratica di Centro",
+				"shortName": "UDC",
+				"id": 30013
+			},
+			"council": {
+				"key": "1311000",
+				"categoryKey": "131",
+				"abbreviation": "CN",
+				"name": "Consiglio nazionale"
+			}
+		}
+	],
+	"page": {
+		"size": 3,
+		"number": 1,
+		"hasNext": false,
+		"totalElements": 6,
+		"totalPages": 2
+	}
+}

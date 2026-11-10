@@ -1,0 +1,200 @@
+{
+	"content": [
+		{
+			"key": "1661000",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 0
+		},
+		{
+			"key": "1661001",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 19
+		},
+		{
+			"key": "1661002",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 15
+		},
+		{
+			"key": "1661003",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 16
+		},
+		{
+			"key": "1661004",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 13
+		},
+		{
+			"key": "1661005",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 12
+		},
+		{
+			"key": "1661006",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 2
+		},
+		{
+			"key": "1661007",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 10
+		},
+		{
+			"key": "1661008",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 25
+		},
+		{
+			"key": "1661009",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 8
+		},
+		{
+			"key": "1661010",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 18
+		},
+		{
+			"key": "1661011",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 26
+		},
+		{
+			"key": "1661012",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 3
+		},
+		{
+			"key": "1661013",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 24
+		},
+		{
+			"key": "1661014",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 7
+		},
+		{
+			"key": "1661015",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 6
+		},
+		{
+			"key": "1661016",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 14
+		},
+		{
+			"key": "1661017",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 5
+		},
+		{
+			"key": "1661018",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 11
+		},
+		{
+			"key": "1661019",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 17
+		},
+		{
+			"key": "1661020",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 27
+		},
+		{
+			"key": "1661021",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 20
+		},
+		{
+			"key": "1661022",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 4
+		},
+		{
+			"key": "1661023",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 22
+		},
+		{
+			"key": "1661024",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 23
+		},
+		{
+			"key": "1661025",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 9
+		},
+		{
+			"key": "1661026",
+			"categoryKey": "166",
+			"abbreviation": null,
+			"name": null,
+			"legacyKey": 1
+		}
+	],
+	"page": {
+		"size": 100,
+		"number": 0,
+		"hasNext": false,
+		"totalElements": null,
+		"totalPages": null
+	}
+}
