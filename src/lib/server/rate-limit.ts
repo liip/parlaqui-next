@@ -30,6 +30,25 @@ export function createLimiter({
 	return { hit };
 }
 
+// counts at most `limit` hits per key and Zurich day; the least recently seen key goes when the
+// map is full
+export function createDailyCap({ limit, maxKeys }: { limit: number; maxKeys: number }) {
+	let today = '';
+	const seen = new Map<string, number>();
+
+	return (day: string, key: string): boolean => {
+		if (day !== today) {
+			today = day;
+			seen.clear();
+		}
+		const hits = seen.get(key) ?? 0;
+		seen.delete(key);
+		seen.set(key, Math.min(hits + 1, limit + 1));
+		if (seen.size > maxKeys) seen.delete(seen.keys().next().value!);
+		return hits < limit;
+	};
+}
+
 // counts refusals by limit name only, so the log shows a flood without naming who caused it
 export function createRefusalTally() {
 	const counts = new Map<string, number>();

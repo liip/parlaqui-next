@@ -72,25 +72,6 @@ function referrerHost(referer: string | null, ownHost: string): string {
 	return host === ownHost ? '' : host;
 }
 
-// counts at most `limit` views per address and day, so a script can neither inflate the
-// figures nor fill the tables; the least recently seen address goes when the map is full
-export function createViewCap({ limit, maxKeys }: { limit: number; maxKeys: number }) {
-	let today = '';
-	const seen = new Map<string, number>();
-
-	return (day: string, address: string): boolean => {
-		if (day !== today) {
-			today = day;
-			seen.clear();
-		}
-		const views = seen.get(address) ?? 0;
-		seen.delete(address);
-		seen.set(address, Math.min(views + 1, limit + 1));
-		if (seen.size > maxKeys) seen.delete(seen.keys().next().value!);
-		return views < limit;
-	};
-}
-
 let salt = { day: '', value: Buffer.alloc(0) };
 
 // the salt never leaves memory and changes every day, so a stored hash cannot be traced back

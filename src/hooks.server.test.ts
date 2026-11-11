@@ -233,6 +233,39 @@ describe('handle', () => {
 		expect((await visit(elsewhere)).status).toBe(200);
 	});
 
+	it('refuses the 3001st game start from one address in a Zurich day, and starts again the next day', async () => {
+		const devices = Array.from({ length: 60 }, (_, i) => `daily-device-${i}`);
+		for (const token of devices) knownVisitor(token);
+		const start = (i: number) =>
+			visit({
+				path: '/api/game',
+				method: 'POST',
+				address: '198.51.100.90',
+				cookie: devices[i % devices.length]
+			});
+
+		vi.useFakeTimers({ toFake: ['Date'] });
+		try {
+			vi.setSystemTime(new Date('2026-11-30T08:00:00+01:00'));
+			for (let i = 0; i < 3000; i++) {
+				if (i > 0 && i % 1800 === 0) vi.advanceTimersByTime(11 * 60_000);
+				expect((await start(i)).status).toBe(200);
+			}
+			vi.advanceTimersByTime(11 * 60_000);
+
+			const refused = await start(3000);
+			expect(refused.status).toBe(429);
+			expect(await refused.json()).toEqual({ message: 'game.tooFast' });
+			const elsewhere = { path: '/api/game', method: 'POST', address: '198.51.100.91' };
+			expect((await visit(elsewhere)).status).toBe(200);
+
+			vi.setSystemTime(new Date('2026-12-01T00:05:00+01:00'));
+			expect((await start(3001)).status).toBe(200);
+		} finally {
+			vi.useRealTimers();
+		}
+	});
+
 	it('serves game traffic when the address cannot be read, and says so once', async () => {
 		const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
 
