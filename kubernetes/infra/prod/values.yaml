@@ -9,7 +9,7 @@ aliases:
 image:
   repository: docker.gitlab.liip.ch/liip/parlaqui-next/app
   # Written by the deploy:production CI job, do not edit by hand.
-  tag: v1-0-6
+  tag: v1-0-7
 imagePullSecret: ''
 
 tls:
