@@ -5,7 +5,6 @@ import { testDb } from '../../../test/db';
 import {
 	OTHER_REFERRER,
 	countGameStarted,
-	createViewCap,
 	dayOf,
 	fingerprint,
 	insights,
@@ -95,28 +94,6 @@ describe('viewOf', () => {
 			expect(referrer(junk), junk).toBe(OTHER_REFERRER);
 		}
 		expect(new URL(long).hostname.length).toBeGreaterThan(300);
-	});
-});
-
-describe('createViewCap', () => {
-	it('counts the first views of an address each day and ignores the rest', () => {
-		const admit = createViewCap({ limit: 3, maxKeys: 10 });
-		const day = '2026-11-30';
-		const admitted = Array.from({ length: 5 }, () => admit(day, '203.0.113.7'));
-		expect(admitted).toEqual([true, true, true, false, false]);
-		expect(admit(day, '203.0.113.8')).toBe(true);
-		expect(admit('2026-12-01', '203.0.113.7')).toBe(true);
-	});
-
-	it('keeps at most maxKeys addresses, dropping the one seen longest ago', () => {
-		const admit = createViewCap({ limit: 1, maxKeys: 2 });
-		const day = '2026-11-30';
-		admit(day, 'a');
-		admit(day, 'b');
-		admit(day, 'a');
-		admit(day, 'c');
-		expect(admit(day, 'a')).toBe(false);
-		expect(admit(day, 'b')).toBe(true);
 	});
 });
 

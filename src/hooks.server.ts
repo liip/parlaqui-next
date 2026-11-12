@@ -1,20 +1,18 @@
 import { env } from '$env/dynamic/private';
 import { redirect, type Handle, type RequestEvent, type ServerInit } from '@sveltejs/kit';
 import { isLanguage } from '$lib/i18n';
-import {
-	createViewCap,
-	dayOf,
-	fingerprint,
-	pruneAnalytics,
-	recordView,
-	viewOf
-} from '$lib/server/analytics';
+import { dayOf, fingerprint, pruneAnalytics, recordView, viewOf } from '$lib/server/analytics';
 import { createDailyTask, repeat } from '$lib/server/daily';
 import { pruneAbandonedGames, pruneVisitors } from '$lib/server/retention';
 import { BACKUP_PATH, db } from '$lib/server/db';
 import { snapshot } from '$lib/server/db/backup';
 import { migration } from '$lib/server/db/ready';
-import { addressBucket, createLimiter, createRefusalTally } from '$lib/server/rate-limit';
+import {
+	addressBucket,
+	createDailyCap,
+	createLimiter,
+	createRefusalTally
+} from '$lib/server/rate-limit';
 import { importDeps, importIfStale } from '$lib/server/roster/run';
 import { VISITOR_COOKIE, findVisitor, hashOf } from '$lib/server/visitor';
 
@@ -77,6 +75,10 @@ const limits = {
 };
 
 type LimitName = keyof typeof limits;
+
+// a finished game stays for good at about 5.5 KB, so one address adds at most about 16 MB a day to
+// the 2 GiB volume; still above the ten-minute ceiling, so a whole school keeps its burst
+const addressDayStarts = createDailyCap({ limit: 3000, maxKeys: 50_000 });
 
 const refusals = createRefusalTally();
 
@@ -163,7 +165,7 @@ export const init: ServerInit = () => {
 
 // per address bucket, like flood protection; a mobile carrier's NAT or a school network shares one
 // IPv4 address among many people
-const viewCap = createViewCap({ limit: 1000, maxKeys: 50_000 });
+const viewCap = createDailyCap({ limit: 1000, maxKeys: 50_000 });
 
 // a failed write is logged and never fails the page
 function countView(event: RequestEvent): void {
@@ -250,6 +252,10 @@ function overLimit(event: RequestEvent, path: string): Response | null {
 
 	if (startsGame && !allowed('visitorStarts', 'addressStarts')) {
 		return tooFast(TEN_MINUTES);
+	}
+	if (startsGame && !addressDayStarts(dayOf(new Date(now)), address)) {
+		refusals.count('addressDayStarts');
+		return tooFast(HOUR);
 	}
 	if (isGameTraffic(path) && !allowed('visitorTraffic', 'addressTraffic')) {
 		return tooFast(MINUTE);

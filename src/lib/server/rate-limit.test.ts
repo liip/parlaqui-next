@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { addressBucket, createLimiter, createRefusalTally } from './rate-limit';
+import { addressBucket, createDailyCap, createLimiter, createRefusalTally } from './rate-limit';
 
 describe('createLimiter', () => {
 	it('allows up to the limit then refuses', () => {
@@ -36,6 +36,28 @@ describe('createLimiter', () => {
 		expect(limiter.hit('b', 3)).toBe(false);
 		expect(limiter.hit('c', 3)).toBe(false);
 		expect(limiter.hit('a', 3)).toBe(true);
+	});
+});
+
+describe('createDailyCap', () => {
+	it('counts the first hits of a key each day and refuses the rest', () => {
+		const admit = createDailyCap({ limit: 3, maxKeys: 10 });
+		const day = '2026-11-30';
+		const admitted = Array.from({ length: 5 }, () => admit(day, '203.0.113.7'));
+		expect(admitted).toEqual([true, true, true, false, false]);
+		expect(admit(day, '203.0.113.8')).toBe(true);
+		expect(admit('2026-12-01', '203.0.113.7')).toBe(true);
+	});
+
+	it('keeps at most maxKeys keys, dropping the one seen longest ago', () => {
+		const admit = createDailyCap({ limit: 1, maxKeys: 2 });
+		const day = '2026-11-30';
+		admit(day, 'a');
+		admit(day, 'b');
+		admit(day, 'a');
+		admit(day, 'c');
+		expect(admit(day, 'a')).toBe(false);
+		expect(admit(day, 'b')).toBe(true);
 	});
 });
 
